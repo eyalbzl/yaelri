@@ -1,0 +1,3 @@
+function toggleMenu(b){const m=document.getElementById('main-links');const open=m.classList.toggle('open');b.setAttribute('aria-expanded',String(open));}
+const params=new URLSearchParams(location.search);const topic=document.getElementById('topic');const mapping={family:'ליווי אישי או משפחתי',lecture:'הרצאה או סדנה',other:'אחר'};if(topic&&params.has('topic'))topic.value=mapping[params.get('topic')]||'אחר';
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const m=document.getElementById('main-links'),b=document.querySelector('.menu-btn');if(m&&b){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}}});

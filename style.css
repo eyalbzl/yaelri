@@ -14,3 +14,35 @@
 
 /* V9 publication library and biography */
 #books,#interviews,#courses{scroll-margin-top:90px}.card a.textlink+a.textlink{margin-top:12px}.mini-nav a{display:inline-block;min-height:40px}@media(max-width:760px){.mini-nav{gap:8px}.mini-nav a{font-size:14px}.split img{max-height:440px}}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background: #1da851;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .whatsapp-float {
+    bottom: 18px;
+    left: 18px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}

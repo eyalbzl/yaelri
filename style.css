@@ -46,3 +46,15 @@
     font-size: 14px;
   }
 }
+
+/* Release v12: responsive containment and accessible floating contact */
+html,body{max-width:100%;overflow-x:clip}
+.wrap,.article,.card,.soft,.split>*{min-width:0}
+.article{width:100%;overflow-wrap:break-word}
+.article p,.article li{max-width:72ch}
+.article a{overflow-wrap:anywhere}
+.grid>*{min-width:0}
+.whatsapp-float{position:fixed!important;left:max(18px,env(safe-area-inset-left))!important;right:auto!important;bottom:max(20px,env(safe-area-inset-bottom))!important;z-index:1000;display:inline-flex;align-items:center;justify-content:center;max-width:calc(100vw - 36px);padding:10px 17px;border-radius:999px;background:#207f4d;color:white!important;text-decoration:none!important;font-size:15px;font-weight:700;box-shadow:0 5px 22px #0003}
+.whatsapp-float:focus-visible{outline:3px solid #203c2d;outline-offset:4px}
+footer{padding-bottom:95px}
+@media(max-width:760px){.hero,.split{gap:26px}.hero img{max-height:420px;object-fit:cover}.article p,.article li{font-size:17px}.whatsapp-float{bottom:max(16px,env(safe-area-inset-bottom))!important;left:max(14px,env(safe-area-inset-left))!important;padding:9px 14px}}

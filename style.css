@@ -79,3 +79,10 @@ footer{padding-bottom:95px}
 
 /* Four service cards in one row on desktop */
 .services-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.services-grid .card{padding:22px}.services-grid .card h3{font-size:19px}.about-contact{margin-top:30px}@media(max-width:980px){.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.services-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* v24: consistent service panels on the treatment and consultation page */
+.service-section { padding-top: 28px; padding-bottom: 28px; }
+.service-section .service-panel { background: #fff; border: 1px solid rgba(64,72,58,.13); border-radius: 20px; padding: clamp(22px, 3vw, 38px); box-shadow: 0 8px 24px rgba(40,45,35,.045); }
+.service-section.alt .service-panel { background: #fff; }
+.service-section .service-panel h2 { margin-top: 0; }
+.service-section .service-panel p { max-width: 850px; }
